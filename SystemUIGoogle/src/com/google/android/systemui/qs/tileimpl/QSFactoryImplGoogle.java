@@ -42,7 +42,7 @@ import com.android.systemui.qs.tiles.DataSwitchTile;
 import com.android.systemui.qs.tiles.DeviceControlsTile;
 import com.android.systemui.qs.tiles.DndTile;
 import com.android.systemui.qs.tiles.FPSInfoTile;
-import com.android.systemui.qs.tiles.FlashlightStrengthTile;
+import com.android.systemui.qs.tiles.FlashlightTile;
 import com.android.systemui.qs.tiles.GloveModeTile;
 import com.android.systemui.qs.tiles.HeadsUpTile;
 import com.android.systemui.qs.tiles.HotspotTile;
@@ -104,7 +104,7 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<AirplaneModeTile> airplaneModeTileProvider,
             Provider<WorkModeTile> workModeTileProvider,
             Provider<RotationLockTile> rotationLockTileProvider,
-            Provider<FlashlightStrengthTile> flashlightTileProvider,
+            Provider<FlashlightTile> flashlightTileProvider,
             Provider<LocationTile> locationTileProvider,
             Provider<CastTile> castTileProvider,
             Provider<HotspotTile> hotspotTileProvider,
