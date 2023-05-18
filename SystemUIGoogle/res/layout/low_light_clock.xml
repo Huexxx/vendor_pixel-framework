@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/low_light_clock_dream"
+    android:id="@id/low_light_clock"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/low_light_clock_background_color">
+    android:background="@android:color/black">
 
-    <TextClock
-        android:id="@id/low_light_text_clock"
+    <com.android.systemui.shared.clocks.AnimatableClockView
+        android:id="@id/clock_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elegantTextHeight="false"
         android:fontFamily="google-sans-clock"
         android:gravity="center_horizontal"
         android:layout_gravity="center"
-        android:textColor="@color/low_light_clock_text_color"
         android:textSize="@dimen/low_light_clock_text_size" />
 
     <TextView
