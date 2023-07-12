@@ -88,11 +88,11 @@
         settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
     <com.cherish.settings.preferences.SecureSettingSwitchPreference
-            android:key="screen_off_udfps_enabled"
-            android:title="@string/screen_off_udfps_title"
-            android:summary="@string/screen_off_udfps_summary"
-            android:defaultValue="false"
-            settings:controller="com.android.settings.security.UdfpsGesturePreferenceController" />
+        android:key="screen_off_udfps_enabled"
+        android:title="@string/screen_off_udfps_title"
+        android:summary="@string/screen_off_udfps_summary"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.security.UdfpsGesturePreferenceController" />
 
     <Preference
         android:key="gesture_power_menu_summary"
@@ -100,6 +100,12 @@
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
+    <Preference
+        android:key="doze_double_tap_summary"
+        android:title="@string/double_tap_title"
+        android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"
+        settings:userRestriction="no_ambient_display"
+        settings:controller="com.android.settings.gestures.DoubleTapAmbientPreferenceController" />
 
     <Preference
         android:key="gesture_swipe_to_screenshot_summary"
