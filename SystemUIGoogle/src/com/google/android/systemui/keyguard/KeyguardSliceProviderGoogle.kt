@@ -107,7 +107,6 @@ class KeyguardSliceProviderGoogle : KeyguardSliceProvider(), SmartSpaceUpdateLis
                     }
                     builder.addRow(calendarBuilder)
                 }
-                addZenModeLocked(builder)
                 addPrimaryActionLocked(builder)
                 return builder.build()
             }
@@ -120,7 +119,6 @@ class KeyguardSliceProviderGoogle : KeyguardSliceProvider(), SmartSpaceUpdateLis
             }
             addWeather(builder)
             addNextAlarmLocked(builder)
-            addZenModeLocked(builder)
             addPrimaryActionLocked(builder)
             val slice = builder.build()
             if (isDebug) Log.d(logTag, "Binding slice: $slice")
